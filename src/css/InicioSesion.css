@@ -1,0 +1,65 @@
+.enlaceOlvidarClave{
+
+    color:blue; 
+    text-decoration:underline; 
+    cursor:pointer;
+}
+
+#formulario {
+    display: block;
+    max-width: 25rem;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    background-color: #afaeae;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+#formulario label {
+    display: block;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+#formulario input {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 0.25rem;
+}
+
+#formulario #registrar {
+    display: inline-block;
+    width: auto;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+#formulario button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #0077cc;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+#formulario button:hover {
+    background-color: #005ea8;
+}
+
+#formulario .errores {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+}

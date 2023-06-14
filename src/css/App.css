@@ -1,0 +1,199 @@
+@import url(Header.css);
+@import url(Footer.css);
+@import url(Ranking.css);
+@import url(InicioSesion.css);
+@import url(MiCuenta.css);
+@import url(Inicio.css);
+.tablero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 98vw;
+}
+
+.fila {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.celda {
+  width: 10vw;
+  min-width: 1vw;
+  height: 8vh;
+  margin: 1px;
+  border: 1px solid black;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 160%;
+  transition: background-color 0.3s ease;
+
+}
+
+
+.celda_💣{
+
+  background-color:rgb(245, 94, 94);
+}
+.celda_💣🚩{
+  background-color: rgb(238, 105, 105);
+}
+.celda_🦊{
+  background-color: gray;
+  color:transparent;
+}
+.celda_🚩{
+  background-color: gray;
+}
+.celda_1{
+  color:BLUE;
+}
+
+.celda_2{
+  color: GREEN;
+}
+.explosiva_gameover{
+  background-color: rgb(231, 188, 45);
+}
+
+.celda_3{
+  color: RED;
+}
+
+.celda_4{
+  color: rgb(0, 19, 127);
+}
+
+.celda_5{
+  color:rgb(127,0,0);;
+}
+
+.celda_6{
+  color:rgb(0,127,127);
+}
+
+.celda_7{
+  color:BLACK;
+}
+
+.celda_8{
+  color:rgb(255,0,232);
+}
+
+
+
+.contenedorVictoria{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /*Fondo gris semitransparente */
+  z-index: 9999; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.victoriaContenido {
+  display: flex;
+  flex-direction: column; /* Ajusta la dirección del flex para que los elementos estén apilados uno encima del otro */
+  align-items: center; /* Centra los elementos horizontalmente */
+  justify-content: center; /* Centra los elementos verticalmente */
+  width: 20rem;
+  height: 15rem;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  overflow: hidden;
+}
+
+.victoriaContenido h1{
+  color:blue;
+}
+.victoriaContenido p{
+  color:green;
+  font-weight: bold;
+}
+.victoriaContenido button{
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10rem;
+  height: 2rem;
+  border: 1px solid gray;
+  cursor: pointer;
+  color: red;
+  font-weight: bold;
+  
+}
+
+.errores{
+  color:red;
+}
+
+.Afijos{
+display: table;
+ height: 1.3rem;
+}
+
+[data-title] {
+  position: relative;
+  /* display: inline-block; */
+}
+
+[data-title]:hover:after {
+  opacity: 1;
+  transition: all 0.1s ease 0.5s;
+  visibility: visible;
+}
+
+[data-title]:after {
+  content: attr(data-title);
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 7rem;
+  transform: translateX(-50%);
+  padding: 1.3rem; /* aumentamos el valor del padding */
+  color: #222;
+  background-color: #f8f8f8;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  z-index: 9999;
+  visibility: hidden;
+  width: 10rem; /* ajustamos el ancho de la caja */
+}
+@media only screen and (max-width: 768px) {
+  [data-title]:after {
+    font-size: 14px;
+    padding: 0.5rem;
+  }
+}
+
+
+
+#afijo{
+  padding-right: 0.3rem;
+}
+@media only screen and (min-width: 968px) {
+  .botonMovil {
+    display: none;
+  }
+}
+@media only screen and (max-width: 968px) {
+
+  .botonMovil{
+    position: fixed;
+    bottom: 1rem;
+    right: 30px;
+    z-index: 999;
+    /*Quita la apariencia por defecto en dispositivos IOS*/
+    -webkit-appearance: none;
+    border: none;
+    padding: 0.5rem;
+    background-color: #77f0d2;
+  }
+}

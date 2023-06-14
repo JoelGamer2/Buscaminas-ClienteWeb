@@ -1,0 +1,32 @@
+.statsContenedor {
+    display: block;
+    max-width: 25rem;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    background-color: #afaeae;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+
+#statsContenido h1{
+    text-align: center;
+    color:rgb(57, 97, 11)
+}
+
+#statsContenido p{
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.statsContenedor button{
+    width: 100%;
+    height: 3rem;
+    background-color: rgb(197, 195, 70) !important;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: 0.1rem solid black;
+
+}

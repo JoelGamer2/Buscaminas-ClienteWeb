@@ -1,0 +1,104 @@
+#jugadoresEnPartida{
+    margin-right: 2rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+    background-color: pink;
+    color:#6e0454;
+    border: 0.1rem solid black;
+    cursor:pointer;
+    word-break: break-all;    
+    width: 16rem;
+}
+#jugadoresEnPartida[disabled]{
+    background-color: #f8d5db ;
+    color:#eb77ce;
+    cursor: auto;
+    border: 0.1rem solid #949292;
+
+}
+.tituloInicio {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .subTituloInicio {
+    font-size: 1.8rem;
+    color: #666;
+    text-align: center;
+    margin-bottom: 0.8rem;
+  }
+  
+  .parrafoInicio {
+    font-size: 1.2rem;
+    color: #777;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .fotosInicio{
+    width: 50vh;
+  }
+
+  .rankingInicio{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-wrap: wrap;
+  }
+
+.contenedorRanking{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+  .topJugadores{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    background-image: url("../top3.png");
+    background-size: cover;
+    width: 20rem;
+    height: 20rem;
+  }
+  .parrafoRanking{
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #top1{
+    position: relative;
+    top: -0.8rem;
+    left: 0rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+
+  #top3{
+    position: relative;
+    top: -4.0rem;
+    left: 6.35rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+
+  }
+
+  #top2{
+    position: relative;
+    top: -0.2rem;
+    left: -6.5rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+
+  } 
+

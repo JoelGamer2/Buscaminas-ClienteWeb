@@ -1,0 +1,59 @@
+ /* Tabla de ranking */
+table {
+  background-color: #fafafa;
+  color: #000000;
+  border-collapse: collapse;
+  font-weight: bold;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+ th,td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #333333;
+}
+
+th {
+  background-color: #DB7093;
+}
+
+ tr:nth-child(even) {
+  background-color: #f5d6db;
+}
+
+ tr:nth-child(odd) {
+  background-color: #ffc0cb;
+}
+
+ 
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 668px) {
+  /* Ajustamos el ancho de la tabla */
+  table {
+    width: 100%;
+  }
+  
+  /* Estilos para las filas de la tabla en dispositivos móviles */
+  tbody tr {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  tr{
+    margin-top:1rem;
+  }
+  
+  /* Estilos para los encabezados de la tabla en dispositivos móviles */
+  th {
+    display: block;
+    text-align: center;
+  }
+  
+  /* Estilos para las celdas de la tabla en dispositivos móviles */
+  td {
+    display: block;
+    text-align: center;
+  }
+}
