@@ -10,7 +10,7 @@ import Cookies from 'js-cookie';
 import { InicioSesion } from './InicioSesion';
 import MiCuenta from './MiCuenta';
 import { Ranking } from './Ranking';
-const apiIp = "https://api.worldofcataclysm.eu/";
+const apiIp = "http://localhost:8081";
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
